@@ -1,10 +1,10 @@
 # GitHub Issue: anthropics/claude-code
 
 ## Title
-CLI crashes when skill description is not a string
+CLI throws TypeError when skill description is not a string
 
 ## Labels
-`bug`, `crash`
+`bug`
 
 ## Body
 
@@ -28,7 +28,7 @@ description: [This is parsed as an array, not a string]
 
 2. Start Claude Code
 3. Type `/con` (start typing a slash command to trigger fuzzy search)
-4. CLI crashes with TypeError as the search index is built
+4. TypeError is thrown and UI becomes corrupted
 
 ### Error Message
 
@@ -63,8 +63,12 @@ This is an easy mistake to make because text with brackets can look syntacticall
 d=$(mktemp -d) && mkdir -p "$d/.claude/skills/bad"
 echo -e "---\nname: bad\ndescription: [array]\n---\n# Bad" > "$d/.claude/skills/bad/SKILL.md"
 cd "$d" && claude; rm -rf "$d"
-# Then type /con to trigger crash
+# Then type /con to trigger error
 ```
+
+**Full reproduction scripts available:**
+- [minimal-repro.sh](https://github.com/ai-cora/claude-code/blob/master/issues/skill-description-type/minimal-repro.sh) - Quick 5-line reproduction
+- [test-harness.sh](https://github.com/ai-cora/claude-code/blob/master/issues/skill-description-type/test-harness.sh) - Interactive test with cleanup
 
 ### Suggested Fix
 
