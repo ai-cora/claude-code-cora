@@ -1,14 +1,14 @@
-# GitHub Issue: anthropics/claude-code
+---
+title: CLI throws TypeError when skill description is not a string
+target_repo: anthropics/claude-code
+github_issue: null
+labels: [bug]
+status: ready
+---
 
-## Title
-CLI throws TypeError when skill description is not a string
+# CLI throws TypeError when skill description is not a string
 
-## Labels
-`bug`
-
-## Body
-
-### Description
+## Description
 
 Claude Code CLI throws an unhandled exception when a skill's YAML frontmatter has a `description` field that isn't a string. The error corrupts the terminal UI (multiple input prompts appear) and breaks command palette functionality until the malformed skill is removed.
 
