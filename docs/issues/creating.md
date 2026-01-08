@@ -5,8 +5,12 @@ This guide covers how to create and organize issues for submission to [anthropic
 ## Before Creating an Issue
 
 1. Pull the latest upstream: `git -C upstream/claude-code pull`
-2. Review the issue templates in `upstream/claude-code/.github/ISSUE_TEMPLATE/`
-3. Choose the appropriate template for your issue type
+2. **Check for duplicates**: Search existing issues for similar problems
+   ```bash
+   gh issue list --repo anthropics/claude-code --search "your keywords" --state all
+   ```
+3. Review the issue templates in `upstream/claude-code/.github/ISSUE_TEMPLATE/`
+4. Choose the appropriate template for your issue type
 
 ### Issue Templates
 
