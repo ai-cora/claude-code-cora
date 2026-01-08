@@ -67,8 +67,8 @@ cd "$d" && claude; rm -rf "$d"
 ```
 
 **Full reproduction scripts available:**
-- [minimal-repro.sh](https://github.com/ai-cora/claude-code/blob/master/issues/skill-description-type/minimal-repro.sh) - Quick 5-line reproduction
-- [test-harness.sh](https://github.com/ai-cora/claude-code/blob/master/issues/skill-description-type/test-harness.sh) - Interactive test with cleanup
+- [minimal-repro.sh](https://github.com/ai-cora/claude-code-cora/blob/master/issues/skill-description-type/minimal-repro.sh) - Quick 5-line reproduction
+- [test-harness.sh](https://github.com/ai-cora/claude-code-cora/blob/master/issues/skill-description-type/test-harness.sh) - Interactive test with cleanup
 
 ### Suggested Fix
 
