@@ -1,9 +1,9 @@
 ---
 title: CLI throws TypeError when skill description is not a string
 target_repo: anthropics/claude-code
-github_issue: null
+github_issue: https://github.com/anthropics/claude-code/issues/16770
 labels: [bug]
-status: ready
+status: submitted
 ---
 
 # CLI throws TypeError when skill description is not a string
@@ -67,8 +67,8 @@ cd "$d" && claude; rm -rf "$d"
 ```
 
 **Full reproduction scripts available:**
-- [minimal-repro.sh](https://github.com/ai-cora/claude-code-cora/blob/master/issues/skill-description-type/minimal-repro.sh) - Quick 5-line reproduction
-- [test-harness.sh](https://github.com/ai-cora/claude-code-cora/blob/master/issues/skill-description-type/test-harness.sh) - Interactive test with cleanup
+- [minimal-repro.sh](https://github.com/ai-cora/claude-code-cora/blob/master/issues/16770-skill-description-type/minimal-repro.sh) - Quick 5-line reproduction
+- [test-harness.sh](https://github.com/ai-cora/claude-code-cora/blob/master/issues/16770-skill-description-type/test-harness.sh) - Interactive test with cleanup
 
 ### Suggested Fix
 
