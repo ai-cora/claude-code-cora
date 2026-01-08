@@ -1,8 +1,16 @@
+---
+title: Skill Description Type Validation Bug
+github_issue: https://github.com/anthropics/claude-code/issues/XXX
+status: ready
+severity: high
+claude_code_version: 2.1.1
+---
+
 # Skill Description Type Validation Bug
 
-**GitHub Issue**: https://github.com/anthropics/claude-code/issues/XXX
-**Status**: Ready to submit
-**Severity**: High
+**GitHub Issue**: https://github.com/anthropics/claude-code/issues/XXX   
+**Status**: Ready to submit   
+**Severity**: High   
 **Claude Code Version**: 2.1.1
 
 ## Summary
